@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/even_container"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content">
+
+    <RelativeLayout android:id="@+id/innerChatLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@drawable/chatboxleft">
+        <RelativeLayout android:id="@+id/extremeInnerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+    <TextView android:id="@+id/fromTextView" 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="#333" 
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:text="Mohsin:" />
+    
+    <TextView android:id="@+id/messageTextView" 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="#333" 
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:text="This is a sample Message and we are SMSALL.pkasdkadslkajd ado aja caj caj aj dajsd a"
+        android:layout_below="@+id/fromTextView" />
+    
+    <TextView android:id="@+id/timeStampTextView" 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#666" 
+        android:textSize="12sp"
+        android:text="12:01"
+        android:layout_below="@+id/messageTextView" />
+    
+    </RelativeLayout>
+    
+    </RelativeLayout>
+
+</RelativeLayout>

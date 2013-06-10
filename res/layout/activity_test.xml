@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".TestActivity" xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout android:id="@+id/headerlayout"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/header">
+    <ImageView
+            android:id="@+id/groupButtonImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/group_button_highlighted"
+            android:visibility="visible" />
+
+      <ImageView
+          android:id="@+id/chatButtonImageView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:visibility="visible"
+          android:layout_alignParentTop="true"
+          android:background="@drawable/chat_button_normal"
+          android:layout_toRightOf="@+id/groupButtonImageView" />
+</RelativeLayout>
+     
+    <!--  <Button
+        android:id="@+id/button11"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/info"
+        android:text="" />-->
+    <ListView 
+	    android:id="@+id/groupListView"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent"
+	    android:layout_below="@+id/headerlayout"
+	    android:layout_above="@+id/footerRelativeLayout"
+	    android:gravity="center" />
+    
+     <ListView 
+	    android:id="@+id/chatListView"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/headerlayout"
+	    android:layout_above="@+id/footerRelativeLayout"
+	    android:gravity="center"/>
+     
+     
+      <RelativeLayout android:id="@+id/footerRelativeLayout"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:background="@drawable/footer_a">
+      
+      <Button android:id="@+id/createGroupButton"
+          android:layout_width="wrap_content"
+          android:background="@drawable/new_group_button_layout"
+          android:layout_alignParentLeft="true"
+          android:layout_height="wrap_content"/>
+      
+      <Button android:id="@+id/composeMessageButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:background="@drawable/new_message_button_layout"/>
+      
+    </RelativeLayout>
+    
+</RelativeLayout>

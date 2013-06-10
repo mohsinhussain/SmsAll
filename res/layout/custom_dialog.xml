@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:background="#fff">
+    
+    <TextView android:id="@+id/listOfUsers"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:text="List of Contacts in Group"
+        android:layout_alignParentTop="true"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#223"/>
+    
+    <ListView android:id="@+id/contactsListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listOfUsers"
+        android:layout_above="@+id/confirmButton"/>
+    
+    <Button android:id="@+id/confirmButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="CONFIRM"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"/>
+    
+     <Button android:id="@+id/CancelButton"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:layout_toRightOf="@+id/confirmButton"
+        android:layout_alignParentBottom="true"/>
+    
+    
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stripLinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_strip_active"
+    android:orientation="vertical"
+    android:padding="6dip" >
+ 
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentLeft="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+         />
+ 
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/checkBox1"
+        android:paddingLeft="15dp"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textColor="#fff"
+        android:paddingTop="6dp"
+        android:text="TextView" />
+
+	<TextView
+	    android:id="@+id/num"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/name"
+	    android:textSize="11dp"
+	    android:paddingLeft="15dp"
+	    android:textColor="#c4c4c4"
+	    android:layout_below="@+id/name"
+	    android:text="Number" />
+    
+</RelativeLayout>

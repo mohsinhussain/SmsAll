@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#fff">
+
+    <!-- Login progress -->
+     <ImageView
+         android:id="@+id/ImageView01"
+         android:contentDescription="SMSall"
+         android:layout_width="200dip"
+         android:layout_height="80dip"
+         android:layout_gravity="center"
+         android:paddingTop="5dip"
+         android:paddingBottom="5dip"
+         android:scaleType="fitCenter"
+         android:src="@drawable/logo_main" />
+
+    <LinearLayout
+        android:id="@+id/login_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/login_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/login_progress_signing_in"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <!-- Login form -->
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >        
+        <LinearLayout
+            style="@style/LoginFormContainer"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/phoneNumberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_phone_number"
+                android:inputType="phone"
+                android:textColor="#000"
+                android:maxLines="1"
+                android:singleLine="true" />
+            <EditText
+                android:id="@+id/fullnameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:layout_marginTop="15dp"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:text="@string/action_sign_in_register" />
+            
+            
+            <LinearLayout 
+                android:id="@+id/dob_layout"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" >
+            </LinearLayout>
+            <RadioGroup 
+                android:id="@+id/radioGender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true" >
+            </RadioGroup>
+        </LinearLayout>
+        
+    </ScrollView>
+
+</LinearLayout>

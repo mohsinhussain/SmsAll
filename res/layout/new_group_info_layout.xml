@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <RelativeLayout android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header">
+      <ImageView android:id="@+id/backbuttonImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button_layout"/>
+      <ImageView
+            android:id="@+id/infoButtonImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/backbuttonImageView"
+            android:background="@drawable/info_normal"
+            android:visibility="visible" />
+
+      <ImageView
+          android:id="@+id/membersButtonImageView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:visibility="visible"
+          android:layout_alignParentTop="true"
+          android:background="@drawable/members_normal"
+          android:layout_toRightOf="@+id/infoButtonImageView" />
+      
+    </RelativeLayout>
+  
+    <ScrollView android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footerRelativeLayout"
+        android:layout_height="200dp">
+    <LinearLayout android:id="@+id/innerGroupInfo"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#333"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Group Description:" />
+    
+    <TextView 
+        android:id="@+id/group_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#333"
+        android:layout_marginRight="10dp"
+         />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#333"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Group Creator:" />
+    
+    
+    <TextView
+        android:id="@+id/group_creator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#333"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#333"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Member Count:"/>
+    
+     <TextView
+        android:id="@+id/group_member_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_marginLeft="10dp"
+        android:textColor="#333"
+        android:layout_marginRight="10dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#333"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Group Created On:"/>
+    
+    <TextView
+        android:id="@+id/group_created_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_marginLeft="10dp"
+        android:textColor="#333"
+        android:layout_marginRight="10dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#333"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Group Membership:"/>
+    
+    <TextView
+        android:id="@+id/group_membership"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_marginLeft="10dp"
+        android:textColor="#333"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#333"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Group Traffic:"/>
+    
+    <TextView
+        android:id="@+id/group_traffic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#333"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#333"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Group Type:"/> 
+        
+    <TextView
+        android:id="@+id/group_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#333"
+        android:layout_marginRight="10dp" /> 
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#333"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Group Status:" />
+    
+    <TextView
+        android:id="@+id/group_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#333"
+        android:layout_marginRight="10dp"/>
+    
+</LinearLayout>
+
+    </ScrollView>
+
+
+     <ListView
+           android:padding="5dp"
+           android:id="@+id/membersListView"
+           android:layout_below="@+id/header"
+           android:layout_above="@+id/footerRelativeLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+    
+     
+     <RelativeLayout android:id="@+id/footerRelativeLayout"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:background="@drawable/footer_a">
+      
+    
+      
+    </RelativeLayout>
+    
+
+</RelativeLayout>
